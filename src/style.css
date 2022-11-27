@@ -1,0 +1,227 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
+}
+
+.comp {
+  height: 55rem;
+  width: 80rem;
+  background-color: black;
+  color: white;
+  padding: 5%;
+  margin: 10%;
+}
+
+/* Component- 1 */
+.comp-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item {
+  text-align: center;
+  border: 2px solid grey;
+  height: 7em;
+  width: 35rem;
+  margin: 7%;
+  border-radius: 5px;
+}
+
+.item p {
+  margin-top: 4%;
+  font-size: 25px;
+}
+
+/* Component- 2 */
+.comp-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header h1 {
+  font-weight: 600;
+  font-size: 3rem;
+  width: 11em;
+  height: 3em;
+  padding: 5%;
+  border: 2px solid grey;
+  border-radius: 0.2em;
+  text-align: center;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  margin: 10%;
+}
+
+.opt {
+  width: 37vw;
+  height: 37vh;
+  border: 2px solid grey;
+  margin: 5%;
+  font-size: 3rem;
+  text-align: center;
+  border-radius: 3%;
+}
+
+.opt p {
+  margin-top: 8%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 80%;
+}
+
+.buttons .btn {
+  width: 12rem;
+  height: 5rem;
+  font-weight: bolder;
+  font-size: x-large;
+  border-radius: 32px;
+}
+
+/* Component- 3 */
+.comp-3 {
+  display: flex;
+  position: relative;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20vw;
+  border: 2px solid grey;
+}
+
+.bar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+}
+
+.home,.profile,.logOut {
+  border: 2px solid grey;
+  text-align: center;
+  width: 100%;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 5%;
+}
+
+.main {
+  position: absolute;
+  left: 24.8%;
+  top: 0;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.main-header {
+  width: 59vw;
+  height: 12vh;
+  margin-bottom: 20%;
+  padding-top: 2%;
+  border: 2px solid grey;
+  font-size: xx-large;
+  font-weight: bolder;
+  margin-left: 1px;
+}
+
+.qst,.solution {
+  border: 2px solid grey;
+  width:  90%;
+  height: 14rem;
+  margin-bottom: 6%;
+  margin-left: 5%;
+  font-size: x-large;
+  font-weight: bolder;
+  padding-top: 8%;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 650px) {
+.comp-1 .item {
+  text-align: center;
+  border: 2px solid grey;
+  height: 7em;
+  width: 20rem;
+  margin: 7%;
+  border-radius: 5px;
+}
+
+.comp-2 .header h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  width: 15rem;
+}
+
+.comp-2 .opt {
+  width: 37vw;
+  height: 30vh;
+  font-size: 1.3rem;
+}
+
+.comp-2 {
+  height: 32rem;
+}
+
+.comp-2 .buttons .btn {
+  width: 6rem;
+  height: 3rem;
+  font-weight: bolder;
+  font-size: large;
+  border-radius: 32px;
+}
+
+.main-header {
+  width: 62vw;
+  margin-left: -10px;
+}
+
+.comp-3 {
+  height: 40rem;
+  width: 65rem;
+  }
+
+.sidebar {
+  width: 18vw;
+}
+
+.comp-3 .home,.profile,.logOut {
+  font-size: large;
+  font-weight: bold;
+  padding: 5%;
+}
+
+}
